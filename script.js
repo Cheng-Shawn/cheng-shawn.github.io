@@ -197,19 +197,19 @@ const QuickNav = () => {
         return [{
                 id: 1,
                 label: "纪念日",
-                href: "http://www.xiao-cheng.site/html/Private/Dates.html"
+                href: "https://cheng-shawn.github.io/html/Private/Dates.html"
             }, {
                 id: 2,
                 label: "相册集",
-                href: "http://www.xiao-cheng.site/html/Private/Album.html"
+                href: "https://cheng-shawn.github.io/html/Private/Album.html"
             }, {
                 id: 3,
                 label: "点菜单",
-                href: "http://www.xiao-cheng.site/html/Private/Menu.html"
+                href: "https://cheng-shawn.github.io/html/Private/Menu.html"
             }, {
                 id: 4,
                 label: "故事会",
-                href: "http://www.xiao-cheng.site/html/Private/stories/Story.html"
+                href: "https://cheng-shawn.github.io/html/Private/stories/Story.html"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("a", {href: item.href, className: "quick-nav-item-label" }, item.label)));
@@ -371,6 +371,16 @@ const Movies = () => {
                 icon: "fa-sharp fa-solid fa-brain",
                 image: "https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/151397/warmbodiesnewposter1.jpg",
                 title: "温暖的尸体"
+            }, {
+                desc: "一位专与动物打交道的宠物侦探，以帮人寻找丢失的宠物为生。",
+                icon: "fa-sharp fa-solid fa-cat",
+                image: "https://m.media-amazon.com/images/M/MV5BNGFiYTgxZDctNGI4OS00MWU1LWIwOGUtZmMyNGQxYjVkZjQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+                title: "神探飞机头"
+            }, {
+                desc: "一位专与动物打交道的宠物侦探，以帮人寻找丢失的宠物为生。",
+                icon: "fa-sharp fa-solid fa-dolphin",
+                image: "https://m.media-amazon.com/images/M/MV5BNGFiYTgxZDctNGI4OS00MWU1LWIwOGUtZmMyNGQxYjVkZjQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
+                title: "神探飞机头2"
             }].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
