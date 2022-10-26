@@ -197,19 +197,19 @@ const QuickNav = () => {
         return [{
                 id: 1,
                 label: "纪念日",
-                href: "https://cheng-shawn.github.io/html/Private/Dates.html"
+                href: ""//"https://cheng-shawn.github.io/Dates.html"
             }, {
                 id: 2,
                 label: "相册集",
-                href: "https://cheng-shawn.github.io/html/Private/Album.html"
+                href: "https://cheng-shawn.github.io/Album.html"
             }, {
                 id: 3,
                 label: "点菜单",
-                href: "https://cheng-shawn.github.io/html/Private/Menu.html"
+                href: "https://cheng-shawn.github.io/Menu.html"
             }, {
                 id: 4,
                 label: "故事会",
-                href: "https://cheng-shawn.github.io/html/Private/stories/Story.html"
+                href: "https://cheng-shawn.github.io/stories/Story.html"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("a", {href: item.href, className: "quick-nav-item-label" }, item.label)));

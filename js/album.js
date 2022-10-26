@@ -13,7 +13,7 @@
 const numberOfPhotos = 16;
 let photos = [];
 for (var i = 0; i < numberOfPhotos; i++) {
-  photos.push(`https://github.com/XiaoSanchez/XiaoSanchez.github.io/blob/main/html/Private/images/${i}.jpg?raw=true`);
+  photos.push(`https://github.com/XiaoSanchez/XiaoSanchez.github.io/blob/main/images/${i}.jpg?raw=true`);
 }
 
 class AlbumImage extends React.Component {
