@@ -197,7 +197,7 @@ const QuickNav = () => {
         return [{
                 id: 1,
                 label: "纪念日",
-                href: ""//"https://cheng-shawn.github.io/Dates.html"
+                href: "https://cheng-shawn.github.io/Dates.html"
             }, {
                 id: 2,
                 label: "相册集",
