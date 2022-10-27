@@ -209,7 +209,7 @@ const QuickNav = () => {
             }, {
                 id: 4,
                 label: "故事会",
-                href: "https://cheng-shawn.github.io/stories/Story.html"
+                href: "https://cheng-shawn.github.io/Novel/Story.html"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("a", {href: item.href, className: "quick-nav-item-label" }, item.label)));
