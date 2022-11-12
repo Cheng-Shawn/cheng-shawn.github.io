@@ -81,12 +81,12 @@
                 //在给定矩形内清空一个矩形
                 ctx.clearRect(0, 0, 422, 422);
                 //strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式
-                ctx.strokeStyle = "#FFBE04";
+                ctx.strokeStyle = "#dfbbfb";
                 //font 属性设置或返回画布上文本内容的当前字体属性
                 ctx.font = '16px Microsoft YaHei';
                 for (var i = 0; prizeList.length > i; i++) {
                     var angle = turnplate.startAngle + i * arc;
-                    ctx.fillStyle = (i & 1) ? "#FFFFFF" : "#FFF4D6";
+                    ctx.fillStyle = (i & 1) ? "#FFFFFF" : "#dfbbfb";
                     ctx.beginPath();
                     //arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）
                     ctx.arc(211, 211, turnplate.outsideRadius, angle, angle + arc, false);
