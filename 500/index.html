@@ -29,7 +29,7 @@
         var count = 0;
         var turnplate = $.turnplate("#turnplate");
         turnplate.draw(
-                ["200分转盘一次", "", "", "", "", "", "", "", "小愿望", "新衣服", "苹果14手机"],//奖品名称数组
+                ["200分转盘一次", "任选美食", "国内旅游", "化妆品自选", "实现小愿望", "笔记本自选", "全身衣服自选", "手机自选"],//奖品名称数组
                 [0, 1, 1, turnplate.loadImg("images/award.png"), document.getElementById("youku"), 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
         ).click(function () {
                 if(count == 1)return;
