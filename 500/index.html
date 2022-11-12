@@ -26,11 +26,14 @@
 <div id="turnplate"></div>
 <script type="text/javascript">
     $(document).ready(function () {
+        var count = 0;
         var turnplate = $.turnplate("#turnplate");
         turnplate.draw(
                 ["200分转盘一次", "", "", "", "", "", "", "", "小愿望", "新衣服", "苹果14手机"],//奖品名称数组
                 [0, 1, 1, turnplate.loadImg("images/award.png"), document.getElementById("youku"), 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
         ).click(function () {
+                if(count == 1)return;
+                count++;
             var prize = Math.floor(Math.random() * 4);//抽中奖品ID 奖品名称数组下标
             turnplate.start(Math.floor(Math.random() * 4), function (prize) {
                 //抽奖完成后调用函数
