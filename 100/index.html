@@ -29,7 +29,7 @@
         var turnplate = $.turnplate("#turnplate");
         var count = 0;
         turnplate.draw(
-                ["参与奖+10", "加50分", "福利减一", "加75分", "自动减一", "奶茶", "零食盲盒", "加200分", "化妆品盲盒"],//奖品名称数组
+                ["参与奖+10", "加50分", "福利减一", "加75分", "自动减一", "零食盲盒", "加200分", "化妆品盲盒"],//奖品名称数组
                 [0, 1, 1, turnplate.loadImg("images/award.png"), document.getElementById("youku"), 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
         ).click(function () {
             if(count == 1)return;
