@@ -1,0 +1,51 @@
+<!--
+ * @Description: 
+ * @Logo:                                                               ▄   ▄
+ * ░██████╗██╗░░██╗░█████╗░░██╗░░░░░░░██╗███╗░░██╗  ░█████╗░░█████╗░██╗ █▀█▀█
+ * ██╔════╝██║░░██║██╔══██╗░██║░░██╗░░██║████╗░██║  ██╔══██╗██╔══██╗██║ █▄█▄█
+ * ╚█████╗░███████║███████║░╚██╗████╗██╔╝██╔██╗██║  ██║░░╚═╝███████║██║ ███  ▄▄
+ * ░╚═══██╗██╔══██║██╔══██║░░████╔═████║░██║╚████║  ██║░░██╗██╔══██║██║ ████▐█ █
+ * ██████╔╝██║░░██║██║░░██║░░╚██╔╝░╚██╔╝░██║░╚███║  ╚█████╔╝██║░░██║██║ ████   █
+ * ╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░░╚══╝  ░╚════╝░╚═╝░░╚═╝╚═╝ ▀▀▀▀▀▀▀
+ * @Author: Shawn C
+ * Copyright (c) 2022 by Shawn C., All Rights Reserved. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>200分大转盘抽奖</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jQueryRotate.js"></script>
+    <script type="text/javascript" src="js/turnplate.js?v=1.01"></script>
+</head>
+<body>
+<center><h1 style="color:purple">200分大转盘抽奖</h1></center>
+<img id="youku" src="images/award.png" style="display: none">
+<div id="turnplate"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var turnplate = $.turnplate("#turnplate");
+        turnplate.draw(
+                ["加100分", "自动减一", "加150分", "给哥哥化妆", "200红包代金券", "加300分", "小裙子"],//奖品名称数组
+                [0, 1, 1, turnplate.loadImg("images/award.png"), document.getElementById("youku"), 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
+        ).click(function () {
+            var prize = Math.floor(Math.random() * 4);//抽中奖品ID 奖品名称数组下标
+            turnplate.start(Math.floor(Math.random() * 4), function (prize) {
+                //抽奖完成后调用函数
+                window.alert = function(name){
+                    var iframe = document.createElement("IFRAME");
+                    iframe.style.display="none";
+                    //iframe.setAttribute("src", 'data:text/plain,');
+                    document.documentElement.appendChild(iframe);
+                    window.frames[0].window.alert(name);
+                    iframe.parentNode.removeChild(iframe);
+                }
+                alert("抽中【" + prize + "】");
+            });
+        });
+    });
+</script>
+</body>
+</html>
