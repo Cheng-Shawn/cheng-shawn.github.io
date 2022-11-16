@@ -97,7 +97,7 @@
                     ctx.save();
 
                     //----绘制奖品开始----
-                    ctx.fillStyle = "#0000FF";
+                    ctx.fillStyle = "#006600";
                     var text = prizeList[i];
                     var line_height = 17;
                     //translate方法重新映射画布上的 (0,0) 位置
