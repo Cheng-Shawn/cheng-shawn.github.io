@@ -23,14 +23,12 @@
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        nongli = dd + 19,
         dayMonth = "10/26/",
         birthday = dayMonth + yyyy;
 
     today = mm + "/" + dd + "/" + yyyy;
     if (today > birthday) {
         birthday = dayMonth + nextYear;
-        birthday = dayMonth + nongli;
     }
     //end
 
