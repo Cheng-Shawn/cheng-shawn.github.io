@@ -381,6 +381,51 @@ const Movies = () => {
                 icon: "fa-sharp fa-solid fa-dolphin",
                 image: "https://m.media-amazon.com/images/M/MV5BNGFiYTgxZDctNGI4OS00MWU1LWIwOGUtZmMyNGQxYjVkZjQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
                 title: "神探飞机头2"
+            }, {
+                desc: "哈蒙德立志要建立一个非同寻常的公园：恐龙将是这个公园的主角。",
+                icon: "fa-sharp fa-solid fa-dragon",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9bL9PFOkoTWZP7WTp62NDhQpoe-3ID4W4X1yqB6A0uJHpNCc",
+                title: "侏罗纪公园1"
+            }, {
+                desc: "当年在努布拉岛营建侏罗纪公园时，哈蒙德曾把附近的索纳岛作为恐龙的制造工场。",
+                icon: "fa-sharp fa-regular fa-dragon",
+                image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnSKJsrAkbhyGqbMnJ1y8jILCX1yp_xDqhCcuKS5UDl_SLd1zr",
+                title: "侏罗纪公园2"
+            }, {
+                desc: "继索纳岛恐龙逃往事件过去已有八年，艾伦•格兰特博士无论如何也不愿再返回那个鬼地方。",
+                icon: "fa-sharp fa-light fa-dragon",
+                image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1_2UHCEajJj_HIXlMcxP0NB9DJqcCf6FSMsqYTDQa_o3nxMJY",
+                title: "侏罗纪公园3"
+            }, {
+                desc: "罗纪公园惨剧发生的22年后。如今公园的所在地努布拉岛已经被重新建立成为了一个崭新的恐龙主题乐园，并更名为侏罗纪世界。",
+                icon: "fa-sharp fa-thin fa-dragon",
+                image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTB-qqFJT7vZpgG4zcDvw9sCFRcvv0B62B4-P-pUoNjiTjEKM90",
+                title: "侏罗纪世界1"
+            }, {
+                desc: "自侏罗纪世界的骚乱以来，种类繁多的恐龙在努布拉岛度过了三年无拘无束的时光。",
+                icon: "fa-sharp fa-duotone fa-dragon",
+                image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrTJCVZM5N-d0NeI5ve5QZTRCifA4g6umE_FMGDVRxYTBzCssD",
+                title: "侏罗纪世界2"
+            }, {
+                desc: "剑桥科研小组发现一种可以令传染者处于永久杀人状态的病毒，这种病毒传染速度极快，且无法抑止。",
+                icon: "fa-sharp fa-solid fa-biohazard",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSby_u0e5oKwhE8N82RJnDWudloPXz2yN8wtcTklsD-OCaVsaO9",
+                title: "惊变28天"
+            }, {
+                desc: "充满绝望的世界和毫无留恋的少年， 甩开现实恐慌只能正面迎击！",
+                icon: "fa-sharp fa-thin fa-biohazard",
+                image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJkSyW_9IM8LqZFUJo1GkiBWWNZIYbL740_gEOhykLty70IwE3",
+                title: "甜蜜之家"
+            }, {
+                desc: "是由牛岛新一郎执导并编剧，studio VOLN制作的动画电影。",
+                icon: "fa-sharp fa-solid fa-heart",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYT6QMSNAxCZBGSlcB2f-spseLNK-7Y6xDe_lXb_-W_Ldh7mNd",
+                title: "我想吃掉你的胰脏"
+            }, {
+                desc: "顾名思义就是那宗闻名的人为灾难事件，背景在1986年的乌克兰。",
+                icon: "fa-sharp fa-solid fa-radiation",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6PHq5OU29Q6UE8DoH6eU1Aj47zBgy_YcrZ8MOUfhJhpYHWTO",
+                title: "切尔诺贝利"
             }].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
